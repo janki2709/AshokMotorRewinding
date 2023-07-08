@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setting the viewport to make your website look good on all devices: -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Motor Rewinding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- section will create different sections and
+         we use class to give it style using css. so all the same classname will have same style
+         also it is used sometimes for js -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/final%20logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>
+
+    </section>
+
+    <!-------------------------- About Us --------------------------->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>Powering Efficiency: <br> Professional Motor Rewinding Services</h1>
+                <p>Ashok Motor Rewinding is your trusted provider of professional motor rewinding, repair, and maintenance services. 
+                    <br> With expertise in submersible pipe repairs, generator rentals, and the repair of electrical appliances like ACs, washing machines, and blenders, 
+                    <br> we offer comprehensive solutions to keep your equipment running smoothly.</p>
+                    <a href="" class="visit-us-button red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------------------- Footer Section  --------------------------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            "Welcome to Ashok Motor Rewinding, your trusted destination for motor rewinding, submersible pipe repairs, and comprehensive electrical appliance services. 
+            <br> With years of industry expertise, our skilled technicians specialize in repairing motors, submersible pumps, generators, AC units, washing machines, blenders, and more. 
+            <br> also offer reliable generator rentals to meet your power needs. Count on us for top-quality repairs, efficient solutions, and exceptional customer satisfaction."
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+    </section>
+
+    <!-- JavaScript to toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
